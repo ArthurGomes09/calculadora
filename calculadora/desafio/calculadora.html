@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora.net</title>
+    <link rel="stylesheet" href="./hover.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <section class="row">
+            <article class="col">
+
+                <div class="calculadora bg-dark">
+                    <input class="form-control form-control-lg text-end fs-2 px-2 mb-3" placeholder="0" disabled type="text" id="visor">   
+                    
+                    <div class="d-flex justify-content-between">
+                        <button onclick="calcular('acao', 'c' )" type="button" class="btn btn-danger  btn-lg fw-light col-6">C</button>
+                        <button onclick="calcular('acao', '/' )" type="button" class="btn btn-danger  btn-lg fw-light col-3">/</button>
+                        <button onclick="calcular('acao', '*' )" type="button" class="btn btn-danger  btn-lg fw-light col-2">x</button>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <button onclick="calcular('valor', 7)" type="button" class="btn btn-dark  btn-lg fw-light col-3">7</button>
+                        <button onclick="calcular('valor', 8)" type="button" class="btn btn-dark  btn-lg fw-light col-3">8</button>
+                        <button onclick="calcular('valor', 9)" type="button" class="btn btn-dark  btn-lg fw-light col-3">9</button>
+                        <button onclick="calcular('acao', '-')" type="button" class="btn btn-danger btn-lg fw-light col-2">-</button>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <button onclick="calcular('valor', 4)" type="button" class="btn btn-dark  btn-lg fw-light col-3">4</button>
+                        <button onclick="calcular('valor', 5)" type="button" class="btn btn-dark  btn-lg fw-light col-3">5</button>
+                        <button onclick="calcular('valor', 6)" type="button" class="btn btn-dark  btn-lg fw-light col-3">6</button>
+                        <button onclick="calcular('acao', '+')" type="button" class="btn btn-danger  btn-lg fw-light col-2">+</button>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <button onclick="calcular('valor', 1)" type="button" class="btn btn-dark  btn-lg fw-light col-3">1</button>
+                        <button onclick="calcular('valor', 2)" type="button" class="btn btn-dark  btn-lg fw-light col-3">2</button>
+                        <button onclick="calcular('valor', 3)" type="button" class="btn btn-dark  btn-lg fw-light col-3">3</button>
+                        <button onclick="calcular('acao', '=')" type="button" class="btn btn-danger btn-lg fw-light enter mb-auto">=</button>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <button onclick="calcular('valor', 0)" type="button" class="btn btn-dark  btn-lg fw-light col-3 zero">0</button>
+                        <button onclick="" type="button" class="btn btn-dark  btn-lg fw-light ponto ">.</button>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+    </div>
+
+
+
+
+
+    <script src="./bootstrap.min.js"></script>
+    <script src="calculadora.js"></script>
+</body>
+</html>
